@@ -4,16 +4,34 @@ import Layout from "../layouts/Layout.astro"
 
 <Layout>
     
-    <h3>Sobre nosotros</h3>
-
-    <img src="practica1.jpg" alt="" width="400px" height="200px">
-
-
-    <div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    <section>
+        <div>        
+            
+            <img src="practica1.jpg" alt="" width="400px" height="400px">
+            
+        </div>
         
-    </div>
+        
+        <div>
+            
+            <h3>Sobre nosotros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    
+        </div>
+
+    </section>
 
 </Layout>
+
+<style>
+
+    section {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: start;
+        justify-content: start;
+    }
+
+</style>
