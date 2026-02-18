@@ -2,12 +2,11 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<nav>
-
-	<div>
-		<Icon name="iconpractica" width="56" height="56" />
-
-	</div>
+<section>
+	<nav>
+		<div>
+			<Icon name="iconpractica" width="56" height="56" />
+		</div>
 
 		<div>
 			<a href="/">Inicio</a>
@@ -15,14 +14,21 @@ import { Icon } from "astro-icon/components";
 			<a href="/contact">Contacto</a>
 			<a href="/blog">Blog</a>
 		</div>
-
-</nav>
+	</nav>
+</section>
 
 <style>
 	/* Estilos para el menú de navegación */
 	nav {
 		display: flex;
-		
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		align-items: end;
 	}
 
+	div {
+		display: flex;
+		gap: 20px;
+	}
 </style>

@@ -5,13 +5,27 @@ import TarjetasBlog from "../components/TarjetasBlog.astro"
 
 <Layout>
     
-    <TarjetasBlog>
-    </TarjetasBlog>
+    <section>
+        
+        <TarjetasBlog>
+        </TarjetasBlog>
+    
+        <TarjetasBlog>
+        </TarjetasBlog>
+    
+        <TarjetasBlog>
+        </TarjetasBlog>
 
-    <TarjetasBlog>
-    </TarjetasBlog>
-
-    <TarjetasBlog>
-    </TarjetasBlog>
+    </section>
 
 </Layout>
+
+<style>
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+</style>
