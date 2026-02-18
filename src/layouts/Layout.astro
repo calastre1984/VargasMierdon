@@ -1,5 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
+import Menu from '../components/MenuPrincipal.astro'
+import Pie from '../components/Pie.astro'
 ---
 
 <!doctype html>
@@ -13,29 +15,16 @@ import { Icon } from 'astro-icon/components'
 		<title>Dermatologia Valencia</title>
 	</head>
 
-<nav>
 
-	<div>
-		<Icon name="iconpractica" width="56" height="56" />
-
-		<p>Tu salud es nuestra prioridad</p>
-	</div>
-
-		<div>
-			<a href="/">Inicio</a>
-			<a href="/about-us">Sobre mi</a>
-			<a href="/contact">Contacto</a>
-			<a href="/blog">Blog</a>
-		</div>
-
-</nav>
 
 	<body>
 
-		
-		<slot />
-		Pie de pagina
+		<Menu></Menu>
 
+		<slot />
+
+		<Pie></Pie>
+		
 	</body>
 </html>
 
