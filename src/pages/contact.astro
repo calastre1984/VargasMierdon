@@ -4,20 +4,23 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout> 
-<section>
-    <div>
+<section class="bg-blue-600">
+    <!-- <div>
         <h3>Ubicación</h3>
         <p>Valencia, Av. Bolivar</p>
         <h3>Número de telefono</h3>
         <p>+21213124</p>
-    </div>
+    </div> -->
     <div>
         <form>
-            <h1>Ingrese sus datos para contactarnos</h1>
-            <input type="email" placeholder="Tu correo electrónico" />
-            <input type="number" placeholder="Tu número de teléfono" />
-            <input type="text" placeholder="Razon de consulta" />
-            <button type="submit">Enviar</button>
+            <h2>Ingrese sus datos para contactarnos</h2>
+            <p class="text-white font-bold gap-0.5">Correo electronico</p>
+            <input type="email"/>
+            <p class="text-white font-bold">Numero de telefono</p>
+            <input type="number"/>
+            <p class="text-white font-bold">Razon de consulta</p>
+            <input type="text"/>
+            <button type="submit" class="font-bold text-white bg-blue-800 hover:bg-blue-900 px-4 py-2 rounded">Enviar</button>
         </form>
     </div>
 </section>
@@ -25,18 +28,32 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+input {
+    background-color: white;
+    outline: none;
+}
+
+h2 {
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    color: white;
+    text-align: center;
+    gap: 40px;
+}
 
 section {
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: start;
-    justify-content: start;
+    justify-content: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
 }
 </style>
