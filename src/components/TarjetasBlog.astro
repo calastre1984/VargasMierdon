@@ -1,22 +1,20 @@
 <section>
+    <img src="/practica3.jpg" alt="" width="200px" height="100px" />
 
-    <img src="/practica3.jpg" alt="" width="200px" height="100px"/> 
-
-        <div>
-
-            <h3>titulo</h3>
-            <p>(fechas y descripcion)</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-            <a href="#">Leer más...</a>
-
-        </div>
-
+    <div>
+        <h3>titulo</h3>
+        <p class="Fechas">(fechas y descripcion)</p>
+        <p class="Texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            voluptate.
+        </p>
+        <a href="#">Leer más...</a>
+    </div>
 </section>
 
 <style>
-
     a {
-        color: rgb(0, 98, 255);
+        color: rgb(0, 1, 1);
         font-weight: 600;
         text-decoration: none;
     }
@@ -24,9 +22,21 @@
     section {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: start;
         gap: 20px;
-        background-color: rgb(153, 152, 152);
+        background-color: rgba(0, 0, 255, 0.096);
     }
-    
+
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .Fechas {
+        font-size: 14px;
+    }
+
+    .Texto {
+        font-size: 20px;
+    }
 </style>
