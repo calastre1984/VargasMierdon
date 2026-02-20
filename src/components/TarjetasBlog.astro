@@ -1,13 +1,17 @@
+---
+const titulo = Astro.props.titulo
+const descripcion = Astro.props.descripcion
+const fecha = Astro.props.fecha
+const img = Astro.props.img
+---
+
 <section>
-    <img src="/practica3.jpg" alt="" width="200px" height="100px" />
+    <img src={img} alt="" width="200px" height="100px" />
 
     <div>
-        <h3>titulo</h3>
-        <p class="Fechas">(fechas y descripcion)</p>
-        <p class="Texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            voluptate.
-        </p>
+        <h3>{titulo}</h3>
+        <p class="Fechas">{fecha}</p>
+        <p class="Texto">{descripcion}</p>
         <a href="#">Leer más...</a>
     </div>
 </section>
@@ -25,6 +29,7 @@
         align-items: start;
         gap: 20px;
         background-color: rgba(0, 0, 255, 0.096);
+        padding: 25px 25px;
     }
 
     h3 {

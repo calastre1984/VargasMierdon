@@ -1,31 +1,30 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import TarjetasBlog from "../components/TarjetasBlog.astro"
+import Layout from "../layouts/Layout.astro";
+import TarjetasBlog from "../components/TarjetasBlog.astro";
 ---
 
 <Layout>
-    
     <section>
-        
-        <TarjetasBlog>
-        </TarjetasBlog>
-    
-        <TarjetasBlog>
-        </TarjetasBlog>
-    
-        <TarjetasBlog>
-        </TarjetasBlog>
+        <div class="blog-container">
+            <TarjetasBlog titulo="Problemas piel" descripcion="Los problemas de piel pueden ser causados por diversas razones como alergias, infecciones o condiciones médicas." fecha="Publicado el 5 de junio de 2024" img="/practica1.jpg"/>
 
+            <TarjetasBlog titulo="Quistes" descripcion="Los quistes son lesiones benignas que pueden aparecer en la piel." fecha="Publicado el 10 de junio de 2024" img="/practica2.jpg"/>
+
+            <TarjetasBlog titulo="Tratamientos dermatológicos" descripcion="lavate la carita con agua y jabon" fecha="Publicado el 15 de julio de 2024" img="/practica3.jpg"/>
+        </div>
+        <div>
+            <h2>Blog Posts</h2>
+        </div>
     </section>
-
 </Layout>
 
 <style>
-
-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 50px;
+        justify-content: left;
+        align-items: right;
+    }
 </style>

@@ -4,28 +4,38 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-
-<section>
-	<div>
-		<h1>Clinica Dermatologia Valencia</h1>
-		<p>Tu salud es nuestra prioridad</p>
-		<img src="practica5.jpg" alt="" width="400px" height="400px"/>
-		<div class="boton">
-			<button>Contactar</button>
-			<button>Saber más</button>
+	<section>
+		<div>
+			<h1>Clinica Dermatologia Valencia</h1>
+			<p>Tu salud es nuestra prioridad</p>
+			<div>
+				<button class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md">Contactar</button>
+				<button class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md">Saber más</button>
+			</div>
 		</div>
-	</div>
-	
-</section>
-
+		<img src="practica5.jpg" alt="" width="400px" height="400px" />
+	</section>
 </Layout>
 
 <style>
-
-.boton {
-	display: flex;
-	gap: 20px;
-	align-items: center;
+	.boton {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		;
 	}
 
-</style>
+	section {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 50px;
+	}
+
+	h1 {
+		font-size: 48px;
+		font-weight: bold;
+		color: rgb(10, 10, 10);
+	}
