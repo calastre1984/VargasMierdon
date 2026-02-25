@@ -1,8 +1,17 @@
 ---
+import { string } from 'astro:schema'
+
 const titulo = Astro.props.titulo
 const descripcion = Astro.props.descripcion
 const fecha = Astro.props.fecha
 const img = Astro.props.img
+
+interface Props {
+    titulo: string
+    fecha: string
+    descripcion: string
+    img: string
+}
 ---
 
 <section>
