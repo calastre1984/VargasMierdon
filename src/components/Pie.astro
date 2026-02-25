@@ -1,15 +1,24 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <footer>
     <div>
         <p>Todos los derechos reservados &copy; 2024</p>
     </div>
     <div>
         <h3>Trinibeth Ortega</h3>
-        <p>dermatologa</p>
+        <p>Dermatologa</p>
     </div>
 
     <div>
         <h3>Contacto:</h3>
         <p>Telefono: +58 123456789</p>
+        <div>
+            <button>
+                <Icon name="instagram1" width="24" height="24" />
+            </button>
+        </div>
     </div>
 </footer>
 
@@ -28,5 +37,16 @@
         font-size: 20px;
         font-weight: bold;
         gap: 20px;
+    }
+    button {
+        background-color: rgb(77, 125, 255);
+        border-radius: 100%;
+        padding: 5px;
+    }
+    button:hover {
+        background-color: white;
+        transform: scale(1.1);
+        transition: background-color 0.4s ease;
+        
     }
 </style>

@@ -5,12 +5,21 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
 	<section>
+		<div class="fondo">
+			<img src="/practica.jpg" alt="" />
+		</div>
 		<div>
 			<h1>Clinica Dermatologia Valencia</h1>
 			<p>Tu salud es nuestra prioridad</p>
 			<div>
-				<button class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md">Contactar</button>
-				<button class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md">Saber más</button>
+				<button
+					class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md"
+					>Contactar</button
+				>
+				<button
+					class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md"
+					>Saber más</button
+				>
 			</div>
 		</div>
 		<img src="practica5.jpg" alt="" width="400px" height="400px" />
@@ -25,12 +34,14 @@ import Layout from "../layouts/Layout.astro";
 	}
 
 	section {
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
 		align-items: center;
 		justify-content: space-between;
 		padding: 20px 50px;
+		overflow: hidden;
 	}
 
 	h1 {
@@ -38,3 +49,17 @@ import Layout from "../layouts/Layout.astro";
 		font-weight: bold;
 		color: rgb(10, 10, 10);
 	}
+	.fondo {
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 1;
+		z-index: -9993231;
+		width: 100%;
+		opacity: 0.3;
+
+	}
+	.fondo img {
+		width: 100%;
+	}
+</style>
