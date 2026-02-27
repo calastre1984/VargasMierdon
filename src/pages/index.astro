@@ -14,11 +14,11 @@ import Layout from "../layouts/Layout.astro";
 			<div>
 				<button
 					class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md"
-					>Contactar</button
+					id="contactar">Contactar</button
 				>
 				<button
 					class="text-white font-bold bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md"
-					>Saber más</button
+					id="saber-mas">Saber más</button
 				>
 			</div>
 		</div>
@@ -57,9 +57,19 @@ import Layout from "../layouts/Layout.astro";
 		z-index: -9993231;
 		width: 100%;
 		opacity: 0.3;
-
 	}
 	.fondo img {
 		width: 100%;
 	}
 </style>
+
+<script>
+	const contactar = document.getElementById("contactar");
+	contactar?.addEventListener("click", function () {
+				window.location.href = "/contact";
+			})
+	const saberMas = document.getElementById("saber-mas");
+	saberMas?.addEventListener("click", function () {
+				window.location.href = "/about-us"
+			})
+</script>
