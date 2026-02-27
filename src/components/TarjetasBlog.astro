@@ -21,7 +21,7 @@ interface Props {
         <h3>{titulo}</h3>
         <p class="Fechas">{fecha}</p>
         <p class="Texto">{descripcion}</p>
-        <a href="#">Leer más...</a>
+        <a href="#" id="leer-mas">Leer más...</a>
     </div>
 </section>
 
@@ -57,3 +57,12 @@ interface Props {
         font-weight: 700;
     }
 </style>
+
+<script>
+
+    const LeerMas = document.getElementById("leer-mas");
+    LeerMas?.addEventListener('click', function (event){
+        LeerMas
+    })
+
+</script>
