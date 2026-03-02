@@ -1,40 +1,71 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    
+<div class="titular">
+        <h1 class="text-5xl font-bold">Sobre la Dra Trinibeth Ortega</h1>
+        <p class="text-xl p-2">Dermatologa</p>
+        <p class="text-xl">Cuidando pieles</p>
+</div>  
     <section>
-        <div>        
-            
-            <img src="practica1.jpg" alt="" width="400px" height="400px">
-            
-        </div>
-        
-        
         <div>
-            
-            <h3>Sobre nosotros</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-    
+            <img src="practica1.jpg" alt="" width="400px" height="400px" />
         </div>
 
-        
+        <div>
+            <h3>Sobre nosotros</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, voluptate.
+            </p>
+        </div>
     </section>
-    <section class="section2">
-        <p>111111111</p> 
+    <section class="section2" style="background-color: #59d0c8;">
+        
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, voluptate.
+            </p>
+        </div>
+            <div>
+                <img src="practica1.jpg" alt="" width="400px" height="400px" />
+            </div>
+    </section>
+    <section>
+        
+        <div>
+            <img src="practica1.jpg" alt="" width="400px" height="400px" />
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, voluptate.
+            </p>
+        </div>
     </section>
 </Layout>
 
 <style>
-
     section {
         display: flex;
         flex-direction: row;
         gap: 15px;
-        align-items: start;
-        justify-content: start;
+        align-items: center;
+        justify-content: center;
         padding: 20px 50px;
     }
     h3 {
@@ -48,9 +79,16 @@ import Layout from "../layouts/Layout.astro"
     }
     .section2 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
         align-items: center;
-
+        padding: 20px 50px
+    }
+    .titular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 50px;
     }
 </style>

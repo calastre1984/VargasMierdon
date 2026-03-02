@@ -13,7 +13,7 @@ import { Icon } from "astro-icon/components";
 
     <div>
         <h3>Contacto:</h3>
-        <p>Telefono: +58 123456789</p>
+        <p>Telefono: +58 0414-4262198</p>
         <div>
             <button id="instagram">
                 <Icon name="instagram1" width="24" height="24" />
@@ -28,7 +28,7 @@ import { Icon } from "astro-icon/components";
         flex-direction: row;
         justify-content: left;
         align-items: center;
-        background-color: rgba(0, 98, 255);
+        background-color: rgb(67, 79, 125);
         padding: 10px 50px;
         color: white;
         gap: 50px;
@@ -39,7 +39,7 @@ import { Icon } from "astro-icon/components";
         gap: 20px;
     }
     button {
-        background-color: rgb(77, 125, 255);
+        background-color: rgb(90, 106, 171);
         border-radius: 100%;
         padding: 5px;
     }
@@ -53,6 +53,8 @@ import { Icon } from "astro-icon/components";
 
 <script>
     const instagram = document.getElementById("instagram");
-
+    instagram?.addEventListener('click', function () {
+        window.open("https://www.instagram.com/derma.ortega?utm_source=qr&igsh=ZnJnZ3Z5ZjQwajds")
+    })
 
 </script>
