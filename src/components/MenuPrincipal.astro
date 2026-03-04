@@ -2,8 +2,8 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<section>
-	<nav>
+<section class="relative">
+	<nav class="flex flex-col sm:flex-row">
 		<div>
 			<Icon name="icondoc" width="120" height="120" />
 		</div>
@@ -20,16 +20,18 @@ import { Icon } from "astro-icon/components";
 <style>
 	/* Estilos para el menú de navegación */
 	nav {
-		display: flex;
-		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
 		align-items: center;
 		background-color: rgb(28, 183, 255);
 		padding: 5px 20px;
-		font-size: larger;
+		font-size: 18px;
 	}
-
+	@media (min-width: 640px) {
+		section {
+			font-size: 30px;
+		}
+	}
 	div {
 		display: flex;
 		gap: 20px;
@@ -48,3 +50,6 @@ import { Icon } from "astro-icon/components";
 
 	}
 	</style>
+	<script>
+
+	</script>
